@@ -1,4 +1,4 @@
-module note
+module github.com/xue-yuan/note
 
 go 1.21.5
 
