@@ -10,6 +10,8 @@ import (
 	"github.com/spf13/cobra"
 )
 
+const VERSION_NUMBER = "0.1.0"
+
 var tag string
 var version bool
 var noteMap map[string]interface{}
@@ -23,7 +25,7 @@ help you take a note quickly is the terminal.
 This application is built with spf13/cobra.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		if version {
-			fmt.Println("Note 1.0")
+			fmt.Printf("Note %s", VERSION_NUMBER)
 		}
 	},
 }
